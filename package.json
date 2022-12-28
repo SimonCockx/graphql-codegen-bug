@@ -3,17 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "gql-service-codegen": "graphql-codegen --config graphql/gql-service-codegen-config.ts"
   },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "@nrwl/nx-cloud": "latest",
-    "@nrwl/workspace": "15.3.0",
-    "nx": "15.3.0",
-    "prettier": "^2.6.2",
+    "@graphql-codegen/cli": "^2.16.2",
+    "@graphql-codegen/typescript-apollo-angular": "^3.5.6",
     "typescript": "~4.8.2"
+  },
+  "dependencies": {
+    "@angular/core": "^15.0.4",
+    "apollo-angular": "^4.1.1"
   }
 }
