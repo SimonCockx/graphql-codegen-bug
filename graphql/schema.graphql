@@ -1,9 +1,3 @@
-type Mutation {
-  loginPasswordBased(email: String!, password: String!): User
-  loginPasswordless(token: String!): User
-  requestToken(email: String!, endpoint: String!): Boolean!
-}
-
-type User {
-  email: String
+type Query {
+  loginPasswordBased(email: String!, password: String!): Boolean!
 }

@@ -1,5 +1,3 @@
-mutation doLogin($email: String!, $password: String!) {
-  loginPasswordBased(email: $email, password: $password) {
-    email
-  }
+query doLogin($email: String!, $password: String!) {
+  loginPasswordBased(email: $email, password: $password)
 }
